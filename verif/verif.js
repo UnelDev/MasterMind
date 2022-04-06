@@ -7,8 +7,8 @@ class verif {
 		for (let i = 0; array.length != 4; i++) {
 			// aleatoir entre 0 et 5
 			const random = Math.floor(Math.random() * 6);
-			if (random == 0 && array.indexOf('j') == -1) {
-				array.push('j');
+			if (random == 0 && array.indexOf('o') == -1) {
+				array.push('o');
 			} else if (random == 1 && array.indexOf('b') == -1) {
 				array.push('b');
 			} else if (random == 2 && array.indexOf('r') == -1) {
@@ -32,7 +32,7 @@ class verif {
 		} else {
 			for (let i = 0; i < 4; i++) {
 				if (combination[i] != ' ') {
-					if (combination[i] != 'j' && combination[i] != 'b' && combination[i] != 'r' && combination[i] != 'v' && combination[i] != 'n' && combination[i] != 'm') {
+					if (combination[i] != 'o' && combination[i] != 'b' && combination[i] != 'r' && combination[i] != 'v' && combination[i] != 'n' && combination[i] != 'm') {
 						result.push('errorChar');
 						// console.log('error at' + combination[i]);
 					} else if (combination[i] == this.conbination[i]) {
@@ -61,8 +61,8 @@ class verif {
 		return output;
 	}
 	testColor(character, Colors) {
-		if (character == 'j') {
-			return Colors.masterMind.j;
+		if (character == 'o') {
+			return Colors.masterMind.o;
 		}
 		if (character == 'b') {
 			return Colors.masterMind.b;

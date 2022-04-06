@@ -9,7 +9,7 @@ let result = false;
 console.log('down');
 console.clear();
 console.log('welcome to the mastermind game made by unel');
-console.log(' the list of authorized colors is:' + Colors.masterMind.j + ' j' + Colors.masterMind.b + ' b' + Colors.masterMind.r + ' r' + Colors.masterMind.v + ' v' + Colors.masterMind.n + ' n' + Colors.masterMind.m + ' m' + Colors.reset);
+console.log(' the list of authorized colors is:' + Colors.masterMind.o + ' o' + Colors.masterMind.b + ' b' + Colors.masterMind.r + ' r' + Colors.masterMind.v + ' v' + Colors.masterMind.n + ' n' + Colors.masterMind.m + ' m' + Colors.reset);
 // demander à l'utilisateur de rentrer une combinaison
 const listLigne = [];
 while (!result) {
@@ -36,7 +36,7 @@ while (!result) {
 		listLigne.push('║' + verify.createColor(input, Colors) + '║ ' + goodButNotInTheRightPlace + goodPlace);
 		// ecriture des lignes
 		console.clear();
-		console.log(' the list of authorized colors is:' + Colors.masterMind.j + ' j' + Colors.masterMind.b + ' b' + Colors.masterMind.r + ' r' + Colors.masterMind.v + ' v' + Colors.masterMind.n + ' n' + Colors.masterMind.m + ' m' + Colors.reset);
+		console.log(' the list of authorized colors is:' + Colors.masterMind.o + ' o' + Colors.masterMind.b + ' b' + Colors.masterMind.r + ' r' + Colors.masterMind.v + ' v' + Colors.masterMind.n + ' n' + Colors.masterMind.m + ' m' + Colors.reset);
 		console.log(Colors.masterMind.b + '•' + Colors.reset + ' good place, ' + Colors.masterMind.r + '•' + Colors.reset + ' good color but not in the right place');
 		console.log('╔═════════╗');
 		for (let i = 0; i < listLigne.length; i++) {
