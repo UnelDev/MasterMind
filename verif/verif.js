@@ -21,6 +21,7 @@ class verif {
 				array.push('m');
 			}
 		}
+		console.log(array);
 		return array;
 	}
 	verify(combination) {
