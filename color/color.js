@@ -34,7 +34,7 @@ const Colors = {
 		r: '\x1b[31m',
 		v: '\x1b[32m',
 		j: '\x1b[33m',
-		b: '\x1b[34m',
+		b: '\x1b[37m',
 		m: '\x1b[35m'
 	}
 
