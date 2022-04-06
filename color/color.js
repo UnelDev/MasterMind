@@ -30,11 +30,11 @@ const Colors = {
 		crimson: '\x1b[48m'
 	},
 	masterMind: {
-		n: '\x1b[30m',
+		c: '\x1b[36m',
 		r: '\x1b[31m',
-		v: '\x1b[32m',
+		g: '\x1b[32m',
 		o: '\x1b[33m',
-		b: '\x1b[37m',
+		w: '\x1b[37m',
 		m: '\x1b[35m'
 	}
 

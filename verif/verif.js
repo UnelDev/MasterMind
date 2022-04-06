@@ -9,14 +9,14 @@ class verif {
 			const random = Math.floor(Math.random() * 6);
 			if (random == 0 && array.indexOf('o') == -1) {
 				array.push('o');
-			} else if (random == 1 && array.indexOf('b') == -1) {
-				array.push('b');
+			} else if (random == 1 && array.indexOf('w') == -1) {
+				array.push('w');
 			} else if (random == 2 && array.indexOf('r') == -1) {
 				array.push('r');
-			} else if (random == 3 && array.indexOf('v') == -1) {
-				array.push('v');
-			} else if (random == 4 && array.indexOf('n') == -1) {
-				array.push('n');
+			} else if (random == 3 && array.indexOf('g') == -1) {
+				array.push('g');
+			} else if (random == 4 && array.indexOf('c') == -1) {
+				array.push('c');
 			} else if (random == 5 && array.indexOf('m') == -1) {
 				array.push('m');
 			}
@@ -32,7 +32,7 @@ class verif {
 		} else {
 			for (let i = 0; i < 4; i++) {
 				if (combination[i] != ' ') {
-					if (combination[i] != 'o' && combination[i] != 'b' && combination[i] != 'r' && combination[i] != 'v' && combination[i] != 'n' && combination[i] != 'm') {
+					if (combination[i] != 'o' && combination[i] != 'w' && combination[i] != 'r' && combination[i] != 'g' && combination[i] != 'c' && combination[i] != 'm') {
 						result.push('errorChar');
 						// console.log('error at' + combination[i]);
 					} else if (combination[i] == this.conbination[i]) {
@@ -64,17 +64,17 @@ class verif {
 		if (character == 'o') {
 			return Colors.masterMind.o;
 		}
-		if (character == 'b') {
-			return Colors.masterMind.b;
+		if (character == 'w') {
+			return Colors.masterMind.w;
 		}
 		if (character == 'r') {
 			return Colors.masterMind.r;
 		}
-		if (character == 'v') {
-			return Colors.masterMind.v;
+		if (character == 'g') {
+			return Colors.masterMind.g;
 		}
-		if (character == 'n') {
-			return Colors.masterMind.n;
+		if (character == 'c') {
+			return Colors.masterMind.c;
 		}
 		if (character == 'm') {
 			return Colors.masterMind.m;
