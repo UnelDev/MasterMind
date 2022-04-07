@@ -2,6 +2,13 @@ class verif {
 	constructor() {
 		this.conbination = this.createCombination();
 	}
+	conbinationToString() {
+		let stringconbination = this.conbination[0];
+		for (let i = 1; i < this.conbination.length; i++) {
+			stringconbination += ' '+this.conbination[i];
+		}
+		return stringconbination;
+	}
 	createCombination() {
 		const array = [];
 		for (let i = 0; array.length != 4; i++) {
@@ -64,19 +71,19 @@ class verif {
 		if (character == 'o') {
 			return Colors.masterMind.o;
 		}
-		if (character == 'w') {
+		else if (character == 'w') {
 			return Colors.masterMind.w;
 		}
-		if (character == 'r') {
+		else if (character == 'r') {
 			return Colors.masterMind.r;
 		}
-		if (character == 'g') {
+		else if (character == 'g') {
 			return Colors.masterMind.g;
 		}
-		if (character == 'c') {
+		else if (character == 'c') {
 			return Colors.masterMind.c;
 		}
-		if (character == 'm') {
+		else if (character == 'm') {
 			return Colors.masterMind.m;
 		}
 	}
