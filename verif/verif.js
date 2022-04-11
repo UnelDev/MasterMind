@@ -5,7 +5,7 @@ class verif {
 	conbinationToString() {
 		let stringconbination = this.conbination[0];
 		for (let i = 1; i < this.conbination.length; i++) {
-			stringconbination += ' '+this.conbination[i];
+			stringconbination += ' ' + this.conbination[i];
 		}
 		return stringconbination;
 	}
@@ -70,20 +70,15 @@ class verif {
 	testColor(character, Colors) {
 		if (character == 'o') {
 			return Colors.masterMind.o;
-		}
-		else if (character == 'w') {
+		} else if (character == 'w') {
 			return Colors.masterMind.w;
-		}
-		else if (character == 'r') {
+		} else if (character == 'r') {
 			return Colors.masterMind.r;
-		}
-		else if (character == 'g') {
+		} else if (character == 'g') {
 			return Colors.masterMind.g;
-		}
-		else if (character == 'c') {
+		} else if (character == 'c') {
 			return Colors.masterMind.c;
-		}
-		else if (character == 'm') {
+		} else if (character == 'm') {
 			return Colors.masterMind.m;
 		}
 	}

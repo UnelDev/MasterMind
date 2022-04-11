@@ -12,7 +12,7 @@ const Colors = {
 		red: '\x1b[31m',
 		green: '\x1b[32m',
 		yellow: '\x1b[33m',
-		blue: '\x1b[34m',
+		blue: '\x1b[44m',
 		magenta: '\x1b[35m',
 		cyan: '\x1b[36m',
 		white: '\x1b[37m',
@@ -30,7 +30,7 @@ const Colors = {
 		crimson: '\x1b[48m'
 	},
 	masterMind: {
-		c: '\x1b[36m',
+		c: '\x1b[34m',
 		r: '\x1b[31m',
 		g: '\x1b[32m',
 		o: '\x1b[33m',

@@ -14,16 +14,16 @@ console.log(' the list of authorized colors is:' + Colors.masterMind.o + ' o' + 
 const listLigne = [];
 while (result == 0) {
 	const input = prompt('What is your combination (separate by a space) ? ');
-	if(input == 'get'){
+	if (input == 'get') {
 		result = 2;
-	} else if(input == 'exit'){
+	} else if (input == 'exit') {
 		result = 3;
 	}
-	if (verify.verify(input).indexOf('errorLong') != -1&&result == 0) {
+	if (verify.verify(input).indexOf('errorLong') != -1 && result == 0) {
 		console.log('error: the combination is not 4 characters long');
-	} else if (verify.verify(input).indexOf('errorChar') != -1&&result == 0) {
+	} else if (verify.verify(input).indexOf('errorChar') != -1 && result == 0) {
 		console.log('error: the combination contains an invalid character');
-	} else if(result == 0){
+	} else if (result == 0) {
 		const returnVerify = verify.verify(input);
 		// creation des indices
 		let goodPlace = '';
@@ -62,24 +62,20 @@ if (result == 1) {
 		console.log('You win [̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]');
 	} else if (random == 3) {
 		console.log('You win ಠ_ಠ');
-		
+
 	}
-	console.log('did you want restart ?')
+	console.log('did you want restart ?');
 } else if (result == 2) {
 	console.log('you asked for the solution here it is');
 	let combination = '';
-	/*for (let i = 0; i < verify.conbination.length; i++) {
-		console.log(verify.conbination[i]);
-		combination+=verify.createColor(verify.conbination[i], Colors);		
-	}*/
-		combination+=verify.createColor(verify.conbinationToString(), Colors);
+	combination += verify.createColor(verify.conbinationToString(), Colors);
 
-	listLigne.push('║' +combination + '║ '+Colors.masterMind.w + '•' + Colors.masterMind.w + '•' + Colors.masterMind.w + '•' + Colors.masterMind.w + '•' + Colors.reset)
+	listLigne.push('║' + combination + '║ ' + Colors.masterMind.w + '•' + Colors.masterMind.w + '•' + Colors.masterMind.w + '•' + Colors.masterMind.w + '•' + Colors.reset);
 	console.log('╔═════════╗');
-		for (let i = 0; i < listLigne.length; i++) {
-			console.log(listLigne[i]);
-		}
+	for (let i = 0; i < listLigne.length; i++) {
+		console.log(listLigne[i]);
+	}
 	console.log('╚═════════╝');
-}else if (result == 3) {
+} else if (result == 3) {
 	console.log('you left the game');
 }
