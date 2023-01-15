@@ -6,7 +6,7 @@ To play the game, follow these steps:
 
 - Clone the repository.
 - Install the necessary dependencies by running npm i
-- Start the game by running node main.js in the command-line. The game will prompt you to enter your combination and provide feedback on your guesses. The authorized colors are "o", "w", "r", "g", "c" and "m".
+- Start the game by running node main.js in the command-line. The game will prompt you to enter your combination and provide feedback on your guesses. The authorized colors are "o" (orange), "w" (white), "r" (red), "g" (green), "c" (cyan) and "m" (magenta).
 - You can enter "get" in the command line to get the solution or "exit" to leave the game.
 # Built With
 JavaScript
